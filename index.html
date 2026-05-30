@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>数当てゲーム</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="titleScreen">
+        <h1>数当てゲーム</h1>
+        <button onclick="startGame()">スタート</button> 
+        <!-- onclick=" " はクリックしたら" "内の関数を実行する -->
+    </div>
+
+    <div id="gameScreen">
+        <h1>数当てゲーム</h1>
+        <p>1~100までの数を当ててください！</p>
+        <p id="timer">時間: 100</p>
+
+        <input type="number" id="guess">
+
+        <button id="checkButton" onclick="checkNumber()">決定</button>
+        <button onclick="resetGame()">リセット</button>
+        <p id="count">残り回数: 10</p>
+        <p id="message"></p>
+        <p id="history">履歴:</p>
+
+
+        <script src="script.js"></script>
+    </div>
+
+
+</body>
+</html>
